@@ -1,5 +1,7 @@
 package ch.heigvd.res.stpatrick;
 
+import java.util.LinkedList;
+
 /**
  * Classes that implement this interfaces are "factories" that produce
  * Stream Processors. When a client needs a Stream Processor, it does not
@@ -9,7 +11,10 @@ package ch.heigvd.res.stpatrick;
  * @author Olivier Liechti (olivier.liechti@heig-vd.ch)
  */
 public interface IStreamProcessorsFactory {
-
+   private LinkedList<String> processors;
+   public void IStreamProcessor(){
+       processors = new LinkedList<>();
+   }
   /**
    * Get the default Stream Processor
    * @return a stream processor
