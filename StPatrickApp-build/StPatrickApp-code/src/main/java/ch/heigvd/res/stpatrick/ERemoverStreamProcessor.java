@@ -23,6 +23,8 @@ public class ERemoverStreamProcessor implements IStreamProcessor{
     BufferedWriter bw = new BufferedWriter(out);
     int c = br.read();
     while (c != -1) {
+      if(c != 'e' && c != 'E')
+          out.append((char) c);
       c = br.read();
     }
     bw.flush();

@@ -11,10 +11,6 @@ import java.util.LinkedList;
  * @author Olivier Liechti (olivier.liechti@heig-vd.ch)
  */
 public interface IStreamProcessorsFactory {
-   private LinkedList<String> processors;
-   public void IStreamProcessor(){
-       processors = new LinkedList<>();
-   }
   /**
    * Get the default Stream Processor
    * @return a stream processor
